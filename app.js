@@ -83,7 +83,7 @@ function createCell() {
 
 function resize() {
 	width = parseInt($game.offsetWidth);
-	cellsize = Math.floor(width / cols);
+	cellsize = Math.floor(width / cols - 2);
 	cellsize *= zoom;
 	document.documentElement.style.setProperty(
 		"--game-cell-size",
